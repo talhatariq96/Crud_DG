@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Crud</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+   
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/assets/css/toastr.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="~/assets/js/toastr.min.js"></script>
+
+    <script>
+        // Set the options that I want
+        toastr.options = {
+            "closeButton": true,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-bottom-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+  
+</head>
+
+<body>
+
+   
+    <main id="main">
+
+        @RenderBody();
+
+    </main><!-- End #main -->
+   
+    
+    <script src="~/parsley/parsley.min.js"></script>
+    <!-- Template Main JS File -->
+@*    <script src="assets/js/main.js"></script>
+*@
+</body>
+
+</html>
